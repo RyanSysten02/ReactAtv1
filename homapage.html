@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários - Empresa Fictícia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 70px; /* Para compensar a altura da barra de navegação fixa */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Empresa Fictícia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-5">
+    <h2 class="mb-4">Cadastro de Funcionários</h2>
+    <form>
+        <!-- Dados da Empresa -->
+        <fieldset class="mb-4">
+            <legend class="mb-3">Dados da Empresa</legend>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="razao_social">Razão Social</label>
+                    <input type="text" class="form-control" id="razao_social" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nome_fantasia">Nome Fantasia</label>
+                    <input type="text" class="form-control" id="nome_fantasia" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" class="form-control" id="cnpj" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inscricao_estadual">Inscrição Estadual</label>
+                    <input type="text" class="form-control" id="inscricao_estadual">
+                </div>
+            </div>
+            <!-- Endereço -->
+            <div class="form-group">
+                <label for="endereco">Endereço Completo</label>
+                <input type="text" class="form-control" id="endereco" required>
+            </div>
+            <!-- Telefone e E-mail -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone(s)</label>
+                    <input type="tel" class="form-control" id="telefone">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <!-- Site -->
+            <div class="form-group">
+                <label for="site">Site</label>
+                <input type="url" class="form-control" id="site">
+            </div>
+        </fieldset>
+        <!-- Dados de Contato -->
+        <fieldset class="mb-4">
+            <legend class="mb-3">Dados de Contato</legend>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="contato_nome">Nome do Contato</label>
+                    <input type="text" class="form-control" id="contato_nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" class="form-control" id="cargo">
+                </div>
+            </div>
+            <!-- Telefone e E-mail do Contato -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="contato_telefone">Telefone(s)</label>
+                    <input type="tel" class="form-control" id="contato_telefone">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="contato_email">E-mail</label>
+                    <input type="email" class="form-control" id="contato_email">
+                </div>
+            </div>
+        </fieldset>
+        <!-- Dados Bancários -->
+        <fieldset class="mb-4">
+            <legend class="mb-3">Dados Bancários</legend>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="banco">Banco</label>
+                    <input type="text" class="form-control" id="banco">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="agencia">Agência</label>
+                    <input type="text" class="form-control" id="agencia">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="conta_corrente">Conta Corrente</label>
+                    <input type="text" class="form-control" id="conta_corrente">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tipo_conta">Tipo de Conta</label>
+                    <input type="text" class="form-control" id="tipo_conta">
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+    </form>
+</main>
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <p class="text-center mb-0">Empresa Fictícia - Todos os direitos reservados.</p>
+        <p class="text-center mb-0">Endereço: Rua Fictícia, 123 - Cidade Fictícia - Estado Fictício</p>
+        <p class="text-center mb-0">Telefone: (00) 1234-5678 | E-mail: contato@empresaficticia.com</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
