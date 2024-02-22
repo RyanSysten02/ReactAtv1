@@ -4,7 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 
 export default function Cabecalho() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="justify-content-between">
+    <div className='conteiner'>
+        <Navbar bg="dark" variant="dark" expand="lg" fixed="top" >
       <div className="container">
         <Navbar.Brand href="#">Empresa Fictícia</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
@@ -17,6 +18,8 @@ export default function Cabecalho() {
         </Navbar.Collapse>
       </div>
     </Navbar>
+    </div>
+    
   );
 }
 

@@ -4,9 +4,14 @@ import Pagina from "../pagina";
 export default function CadastroEmpresa(props){
     return (
         <div>
-            <Pagina>
-                <h2>Cadastro de Funcionários</h2>
-                <FormEmpresa />
+            <Pagina> 
+                <div className="conteiner">
+                    <br /> 
+                    <br />
+                    <br />
+                <h1>Cadastro de Produtos</h1>
+                    <FormEmpresa />
+                    </div>   
             </Pagina>
         </div>
     )
