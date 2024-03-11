@@ -1,8 +1,10 @@
 import Cabecalho from "./cabecalho";
+
+
 export default function Pagina(props) {
     return (
         <div>
-            <Cabecalho />
+            <Cabecalho/>
             <div className="container">
                 {props.children}
             </div>
